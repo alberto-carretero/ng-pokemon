@@ -88,7 +88,7 @@ export class BoardComponent implements OnInit, OnDestroy {
 
       pokemonIds.push(currentPokemonId);
 
-      for (let index = 0; index < 3; index++) {
+      for (let index = 0; index < 2; index++) {
         currentPokemonId = await this.getRandomNumber();
 
         if (!pokemonIds.includes(currentPokemonId)) {

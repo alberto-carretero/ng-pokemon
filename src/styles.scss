@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/fonts';
+@import './assets/scss/variables';
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: MinecraftEvenings;
+  background-image: linear-gradient(180deg, $pokemon-white, $pokemon-yellow);
+}

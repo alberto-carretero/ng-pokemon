@@ -1,0 +1,23 @@
+.pokemon {
+  &__image {
+    width: 100%;
+    max-width: 230px;
+    max-height: 230px;
+    filter: brightness(0);
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+
+    &--success {
+      filter: brightness(1);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

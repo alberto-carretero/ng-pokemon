@@ -1,0 +1,9 @@
+<div class="end-game">
+  <img class="end-game__logo" src="../assets/images/logo.png" />
+  <h1 class="end-game__title">Game Over</h1>
+  <div class="end-game__score">
+    <span>Total Score</span>
+    <span>{{ score }}</span>
+  </div>
+  <app-button [name]="'New Game'" (click)="newGame()"></app-button>
+</div>

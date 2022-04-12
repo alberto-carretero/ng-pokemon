@@ -1,0 +1,22 @@
+<div class="board">
+  <div class="board__pokemon">
+    <app-pokemon [pokemon]="pokemon" [hasBeenSuccessful]="hasBeenSuccessful"></app-pokemon>
+  </div>
+  <div class="board__buttons">
+    <app-button
+      *ngFor="let option of buttonsOptions"
+      [name]="option"
+      [disabled]="disableButtons"
+      (pokemonSelected)="checkSelection($event)"
+    ></app-button>
+  </div>
+  <div class="board__lives-score">
+    <div class="board__lives">
+      <app-lives *ngFor="let live of lives"></app-lives>
+    </div>
+    <div class="board__score">
+      <span>Score</span>
+      <span>{{ score }}</span>
+    </div>
+  </div>
+</div>
